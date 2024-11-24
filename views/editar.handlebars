@@ -1,0 +1,29 @@
+<p class="text-start fs-5">Atualizar Agendamento</p>
+<p>
+    <form action="/atualizar" method="POST">
+        <input type="hidden" class="form-control" id="id" name="id" value="{{data.id}}">
+        <div class="mb-3 text-start">
+            <label class="form-label">Modelo:</label>
+            <input type="text" name="modelo" class="form-control" id="modelo" value="{{data.modelo}}">
+        </div>
+        <div class="mb-3 text-start">
+            <label class="form-label">Ano:</label>
+            <input type="text" name="ano" class="form-control" id="ano" value="{{data.ano}}">
+        </div>
+        <div class="mb-3 text-start">
+            <label class="form-label">Cor:</label>
+            <input type="text" name="cor" class="form-control" id="cor" value="{{data.cor}}">
+        </div>
+        <div class="mb-3 text-start">
+            <label class="form-label">Marca:</label>
+            <input type="text" name="marca" class="form-control" id="marca" value="{{data.marca}}">
+        </div>
+        <div class="mb-3 text-start">
+            <label class="form-label">placa:</label>
+            <textarea name="placa" class="form-control" id="placa" style="height: 100px">{{data.placa}}</textarea>
+        </div>
+        <div class="mb-3 text-start">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+    </form>
+</p>

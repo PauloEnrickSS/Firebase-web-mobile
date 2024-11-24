@@ -1,0 +1,60 @@
+    <div class="container-fluid p-0" 
+        style="background: url('carro.jpeg') no-repeat center center / cover; height: 100vh;">
+        <div class="container text-center h-100 d-flex flex-column justify-content-center align-items-center">
+            <!-- Navbar -->
+            <div class="row w-100 mb-4">
+                <div class="col">
+                    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">SISTEMA WEB</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                    <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                                    <a class="nav-link" href="/consulta">Consultar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Formulário -->
+            <div class="row w-100">
+                <div class="col-1"></div>
+                <div class="col bg-white p-4 text-dark rounded">
+                    <p class="text-start fs-5">Cadastrar - Agendamento de Potenciais Clientes</p>
+                    <p class="text-start fs-6">Sistema Utilizado para agendamento de serviços.</p>
+                    <form action="/cadastrar" method="POST">
+                        <div class="mb-3 text-start">
+                            <label class="form-label">Modelo:</label>
+                            <input type="text" name="modelo" class="form-control" id="modelo">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label">Ano:</label>
+                            <input type="text" name="ano" class="form-control" id="ano">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label">Cor:</label>
+                            <input type="text" name="cor" class="form-control" id="cor">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label">Marca:</label>
+                            <input type="text" name="marca" class="form-control" id="marca">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label class="form-label">Placa:</label>
+                            <input type="text" name="placa" class="form-control" id="placa">
+                        </div>
+                        <div class="mb-3 text-start">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
